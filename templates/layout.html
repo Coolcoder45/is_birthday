@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <style media="screen">
+        #Info {
+        background-color: #fad9df;
+        padding: 40px;
+        text-align: center;
+        font-style: oblique;
+        font-family: monospace, sans-serif;
+        border: 5px dotted red;
+      }
+        </style>
+    </head>
+    <body id = "Info">
+        <h1>{% block heading %}{% endblock %}</h1>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html

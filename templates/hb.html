@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+    {% block body %}
+        {% if birthday %}
+            <h1>Yes! Happy Birthday {{ name }}!!</h1>
+            <h1>Enjoy Your Day Dear !!!</h1>
+        {% else %}
+            <h1>Sorry {{ name }} Today is not your birthday...</h1>
+            <h1>Your birthday is on {{ date }}</h1>
+        {% endif %}
+    {% endblock %}
